@@ -10,11 +10,12 @@
     padding: 15px;
     border-radius: 4px;
     background-color: var(--cor-4);
-    margin: 15px 0;
+    margin: 20px 0;
 }
 
 .pet-lista-page .pet .pet__foto img {
     width: 120px;
+    height: 120px;
     border-radius: 50%;
 }
 
