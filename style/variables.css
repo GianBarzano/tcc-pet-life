@@ -3,6 +3,7 @@
     --cor-principal-dark: rgba(0,153,204,1);
     --cor-2: #e34f5f;
     --cor-3: white;
+    --cor-4: #ededed;
     --cor-texto: rgb(58 58 58);
     --cor-borda: rgba(189,189,189,1);
     --cor-borda-hover: rgb(156, 156, 156);
@@ -13,4 +14,9 @@
 .titulo-1{
     font-size: 48px;
     color: var(--cor-principal);
+}
+
+.titulo-2 {
+    font-size: 24px;
+    font-weight: 600;
 }
