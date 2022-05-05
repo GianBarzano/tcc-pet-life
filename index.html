@@ -6,9 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Componente de Login</title>
     <link rel="stylesheet" href="style/style.css">
-    <script type="text/javascript" src="funcoes.js"></script>
 </head>
 <body>
-    <a href="./pets/pet-lista.html" class="titulo-1">Tela 2</a>
+    <script>
+        const enderecoAtualSplit = window.location.href.split('/');
+        enderecoAtualSplit.pop();
+        let novoEndereco = enderecoAtualSplit.join('/') + '/auth/login.html';
+        window.location.href = novoEndereco;
+    </script>
 </body>
 </html>
