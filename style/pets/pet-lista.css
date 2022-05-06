@@ -5,9 +5,6 @@
 
 .pet-lista-page .pet {
     text-align: center;
-    padding: 15px;
-    border-radius: 4px;
-    background-color: var(--cor-4);
     margin: 20px 0;
 }
 
