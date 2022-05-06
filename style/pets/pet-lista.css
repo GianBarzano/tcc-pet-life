@@ -6,6 +6,7 @@
 .pet-lista-page .pet {
     text-align: center;
     margin: 20px 0;
+    cursor: pointer;
 }
 
 .pet-lista-page .pet .pet__foto img {

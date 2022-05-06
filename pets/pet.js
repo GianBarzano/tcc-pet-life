@@ -6,16 +6,9 @@ onBtnLogoutClick = () => {
     window.location.href = novoEndereco;
 }
 
-onBtnNovoPetClick = () => {
+onBtnHomeClick = () => {
     const enderecoAtualSplit = window.location.href.split('/');
     enderecoAtualSplit.pop();
-    let novoEndereco = enderecoAtualSplit.join('/') + '/pet-cadastro.html';
-    window.location.href = novoEndereco;
-}
-
-onPetClick = () => {
-    const enderecoAtualSplit = window.location.href.split('/');
-    enderecoAtualSplit.pop();
-    let novoEndereco = enderecoAtualSplit.join('/') + '/pet.html';
+    let novoEndereco = enderecoAtualSplit.join('/') + '/pet-lista.html';
     window.location.href = novoEndereco;
 }
