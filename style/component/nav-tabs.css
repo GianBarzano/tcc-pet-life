@@ -20,6 +20,10 @@ nav.comp-tabs .tab-item {
     position: relative;
     bottom: 50%;
     font-size: 30px;
+
+    /* Sombra padrão. No futuro utilizar mixin */
+    -webkit-box-shadow: 0px 1px 3px 1px rgb(0 0 0 / 30%);
+    box-shadow: 0px 1px 3px 1px rgb(0 0 0 / 30%);
 }
 
 nav.comp-tabs .tab-item.left {
