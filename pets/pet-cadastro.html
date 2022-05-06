@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Pet</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/variables.css">
+    <link rel="stylesheet" href="../style/button.css">
+    <link rel="stylesheet" href="../style/link.css">
+    <link rel="stylesheet" href="../style/form/input.css">
+    <link rel="stylesheet" href="../style/component/nav-tabs.css">
+
+    <link rel="stylesheet" href="../style/pets/pet-cadastro.css">
+    <script type="text/javascript" src="./pet-cadastro.js"></script>
+</head>
+<body>
+    <div class="pet-cadastro-page page">
+        <div class="tela-container">
+            <div class="titulo-1 titulo-tela">Registro pet</div>
+            <form>
+                <input type="text" name="nome" placeholder="Nome"/>
+                <input type="text" name="raca" placeholder="Raça"/>
+                <input type="text" name="sexo" placeholder="Sexo"/>
+                <input type="date" name="nascimento" placeholder="Data nascimento"/>
+            </form>
+            <button class="btn-cadastrar" onclick="onBtnCadastrarClick()">Cadastrar</button>
+        </div>
+        <nav class="comp-tabs">
+            <span class="tab-item left" onclick="onBtnVoltarClick()">
+                <i class="fa-solid fa-arrow-left"></i>
+            </span>
+        </nav>
+    </div>
+</body>
+</html>
