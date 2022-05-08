@@ -16,12 +16,22 @@
 
     <link rel="stylesheet" href="../style/pets/pet-cadastro.css">
     <script type="text/javascript" src="./pet-cadastro.js"></script>
+
+    <link rel="stylesheet" href="../style/component/comp-input-img.css">
+    <script type="text/javascript" src="../component/comp-input-img.js"></script>
 </head>
 <body>
     <div class="pet-cadastro-page page">
         <div class="tela-container">
-            <div class="titulo-1 titulo-tela">Registro pet</div>
+            <div class="titulo-1 titulo-tela">Registrar pet</div>
             <form>
+                <div class="comp-input-img">
+                    <img src="../assets/pet.jpeg">
+                    <input type="file" name="foto">
+                    <script>
+                        onPagePetCadastroLoad();
+                    </script>
+                </div>
                 <input type="text" name="nome" placeholder="Nome"/>
                 <input type="text" name="raca" placeholder="Raça"/>
                 <input type="text" name="sexo" placeholder="Sexo"/>

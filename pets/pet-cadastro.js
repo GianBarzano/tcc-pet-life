@@ -1,3 +1,9 @@
+onPagePetCadastroLoad = () => {
+    const compFoto = document.querySelector('.comp-input-img');
+    
+    inicializarInputImg(compFoto);
+}
+
 onBtnCadastrarClick = () => {
     const enderecoAtualSplit = window.location.href.split('/');
     enderecoAtualSplit.pop();
