@@ -2,10 +2,12 @@ onPagePetCadastroLoad = () => {
     const compFoto = document.querySelector('.comp-input-img');
     
     inicializarInputImg(compFoto);
-    const urlVideo = 'https://media.istockphoto.com/videos/aerial-view-of-the-shore-of-the-beach-in-cancun-mexico-video-id1264047349';
+    let urlVideo = 'https://media.istockphoto.com/videos/aerial-view-of-the-shore-of-the-beach-in-cancun-mexico-video-id1264047349';
+    urlVideo = 'https://clickcompany.s3.sa-east-1.amazonaws.com/midias/D2XlBStC8NYMPdDrPspdnAIOgxAe5OS7VPrwH6gW.mp4';
     gerarImagemFromVideo(urlVideo)
         .then((res) => {
-            console.log("Resultado imagem", res)
+            let dataUrl = URL.createObjectURL(res);
+            console.log("Resultado imagem", res, 'dataUrl', dataUrl);
         }).catch(err => {
             console.log("Erro conversão imagem", err);
         })
@@ -18,6 +20,7 @@ gerarImagemFromVideo = (url, seekTo = 0.0) => {
             // load the file to a video player
             const videoPlayer = document.createElement('video');
             videoPlayer.setAttribute('src', url);
+            videoPlayer.setAttribute('crossOrigin', 'anonymous');
             videoPlayer.addEventListener('error', (ex) => {
                 reject("error when loading video file", ex);
             });
